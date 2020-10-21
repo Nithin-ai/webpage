@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body style="background-color:#0846A8;">
+    <style>
+        
+
+h1{
+    font-family:sans-serif;
+    font-size:80px;
+    text-shadow:8px 8px 8px Black;
+}
+.center{
+    margin:auto;
+    top:0;
+    left:0;
+    right:0;
+    left:0;
+}
+.outercircle{
+    display:flex;
+    background-color:#ae1927;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    border:solid 2px Black;
+}
+.outerwhite{
+    display:flex;
+    background-color:#EDE8E8;
+    width:330px;
+    height:330px;
+    border-radius:50%;
+    border:solid 2px Black;
+    position:relative;
+    left:33px;
+    top:34px;
+}
+.innerred{
+    display:flex;
+    background-color:#ae1927;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    border:solid 2px Black;
+    position:relative;
+    left:33px;
+    top:33px;
+}
+.innerblue{
+    display:flex;
+    background-color:#0846A8;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:solid 2px Black;
+    position:relative;
+    left:28px;
+    top:29px;
+}
+#star{
+    display:block;
+    width:0;
+    height:0;
+    border-bottom:70px solid #EDE8E8;
+    border-left: 97px solid transparent ;
+    border-right:97px solid transparent;
+    position:relative ;
+    content:'';
+    top:57px;
+    left:6px;
+    transform:rotate(35deg);
+}
+
+#star:before { 
+  border-bottom: 80px solid #EDE8E8; 
+  border-left: 30px solid transparent; 
+  border-right: 30px solid transparent; 
+  position: absolute; 
+  height: 0; 
+  width: 0; 
+  top: -45px; 
+  left: -65px; 
+  display: block; 
+  content: ''; 
+  transform: rotate(-35deg); 
+}
+
+#star:after{
+    position:absolute;
+    display: block; 
+    color: white; 
+    top: 3px; 
+    left: -105px; 
+    width: 0px; 
+    height: 0px; 
+    border-right: 97px solid transparent; 
+    border-bottom: 70px solid #EDE8E8; 
+    border-left: 97px solid transparent; 
+    transform: rotate(-70deg);     
+    content: '';
+}
+
+.shining{
+
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent; 
+    border-right: 20px solid transparent; 
+    border-top: 200px solid #ffffff;
+    opacity:0.4; 
+    border-radius:px;
+    position:relative;
+    left:-182px;
+    top:-75px;
+    transform:rotate(315deg);
+}
+.anshining{
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent; 
+    border-right: 20px solid transparent; 
+    border-top: 208px solid #ffffff;
+    opacity:0.4; 
+    border-radius:px;
+    position:relative;
+    left:-84px;
+    top:60px;
+    transform:rotate(135deg);
+}
+    </style>
+    <h1><center><font color="#ae1927">CAPTAIN</font></center></h1>
+        <div class="outercircle center">
+        <div class="outerwhite "> 
+        <div class="innerred ">
+        <div class="innerblue ">
+        <div id="star"></div>
+        <div class="shining"></div>
+        <div class="anshining"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <h1><center><font color="#ae1927">AMERICA</font></center></h1>
+    </body>
+</html>
