@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <style>
+        body{
+    background-color:#404040;
+    width:100%;
+    height:100vh;
+}
+
+.circle{
+    background-color:Gold;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+.center{
+    margin:auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.rectangle{
+    position:relative;
+    top:80px;
+    width:100px;
+    border-left:25px solid transparent ;
+    border-top:90px solid #ffd700;
+    border-right:25px solid transparent;
+}
+.jaw{
+    position:relative;
+    border-right:25px solid transparent;
+    border-left:25px solid transparent;
+    border-top:30px solid #ffd700;
+    top:20px;
+    width:50px;
+    height:10px;
+    overlap:hidden;
+}
+.jawbottom{
+    position:relative;
+    border-right:11px solid transparent;
+    border-left:11px solid transparent;
+    border-top:15px solid #ae1927;
+    top:-14px;
+    width:52px;
+    left:-12px;
+}
+.jawtop{
+    position:relative;
+    border-right:11px solid transparent;
+    border-left:11px solid transparent;
+    border-bottom:15px solid #ae1927;
+    top:-42px;
+    width:52px;
+    left:-12px;
+}
+.jawrect{
+    position:relative;
+    width:30px;
+    height:10px;
+    background-color:#ae1927;
+    top:-65px;
+      
+}
+.sideleft{
+    position:relative;
+    width:12px;
+    height:100px;
+    border-top:85px solid #ae1927;
+    top:-85px;
+    left:-43px;
+    transform:skewY(40deg);
+    transform:skewX(16deg);
+}
+.sideright{
+    position:relative;
+    width:12px;
+    height:100px;
+    border-top:85px solid #ae1927;
+    top:-270px;
+    left:43px;
+    transform:skewY(0deg);
+    transform:skewX(344deg);
+}
+.strik{
+    position:relative;
+    width:0;
+    height:0;
+    border-right:13px solid transparent;
+    border-left:0px solid transparent;
+    border-bottom:10px solid #ae1927;
+    top:-464px;
+    left:-69px;
+    transform:rotate(0deg);
+}
+.strug{
+    position:relative;
+    width:0;
+    height:0;
+    border-right:0px solid transparent;
+    border-left:13px solid transparent;
+    border-bottom:10px solid #ae1927;
+    top:-474px;
+    left:69px;
+    transform:rotate(0deg);
+}
+.strdown{
+    position:relative;
+    width:0;
+    height:0;
+    border-right:2px solid transparent;
+    border-left:11px solid transparent;
+    border-top:10px solid #ae1927;
+    top:-70px;
+    left:-46px;
+    transform:rotate(0deg);
+}
+.strright{
+    position:relative;
+    width:0;
+    height:0;
+    border-right:10px solid transparent;
+    border-left:2px solid transparent;
+    border-top:11px solid #ae1927;
+    top:-80px;
+    left:45px;
+    transform:rotate(0deg);
+}
+.eyes{
+    position:relative;
+    width:25px;
+    height:10px;
+    background-color:White;
+    border-right:2px solid Gold;
+    border-bottom:4px solid Gold;
+    border-left:7px solid Gold;
+    top:-475px;
+    left:-30px;
+    transform:skewX(20deg) ;
+    box-shadow:0px 0px 2px 2px #000000 inset,0px 0px 3px 3px #52fefe inset;
+}
+.eyesright{
+    position:relative;
+    width:25px;
+    height:10px;
+    background-color:White;
+    border-right:2px solid Gold;
+    border-bottom:4px solid Gold;
+    border-left:7px solid Gold;
+    top:-490px;
+    left:28px;
+    transform:skewX(340deg);
+    box-shadow:0px 0px 2px 2px #000000 inset,0px 0px 3px 3px #52fefe inset;
+}
+
+.mouth{
+    position:relative;
+    width:60px;
+    height:3px;
+    border:solid 2px Black;
+    border-color:transparent transparent Black transparent ;
+    border-radius:0 0 100% 100%;
+    top:-111px;
+    left:-6px;
+}
+.lineleft{
+    position:relative;
+    width:20px;
+    height:3px;
+    border:solid 2px Black;
+    border-color:transparent transparent Black transparent;
+    border-radius:0 0 100% 100%;
+    top:-110px;
+    left:-35px;
+    transform:rotate(301deg);
+}
+.lineright{
+    position:relative;
+    width:18px;
+    height:3px;
+    border:solid 2px Black;
+    border-color:transparent transparent Black transparent;
+    border-radius:0 0 100% 100%;
+    top:-117px;
+    left:35px;
+    transform:rotate(60deg);
+}
+.eyeline{
+    position:relative;
+    width:40px;
+    height:3px;
+    border:solid 2px Black;
+    border-color:transparent transparent Black transparent ;
+    border-radius:0% 0% 100% 100%;
+    top:-201px;
+    left:1px;
+}
+.topleft{
+    position:relative;
+    width:70px;
+    height:70px;
+    background-color:#ae1927;
+    border-radius:0 100% 0 100%;
+    top:-306px;
+    left:-10px;
+    transform:rotate(315deg);
+}
+.lefttop{
+    position:relative;
+    width:40px;
+    height:40px;
+    background-color:Gold;
+    border-radius:0 100% 0 100%;
+    top:-350px;
+    left:-23px;
+    transform:rotate(338deg);
+}
+.righttop{
+    position:relative;
+    width:40px;
+    height:40px;
+    background-color:Gold;
+    border-radius:0 100% 0 100%;
+    top:-390px;
+    left:26px;
+    transform:rotate(120deg);
+}
+.headrect{
+    position:relative;
+    width:20px;
+    height:40px;
+    background-color:#ae1927;
+    top:-420px;
+}
+.jawlineleft{
+    position:relative ;
+    width:13px;
+    height:3px;
+    border:solid 2px Black;
+    border-color:transparent transparent Black transparent;
+    top:-315px;
+    left:-45px;
+    transform:rotate(7deg);
+}
+.jawlineright{
+    position:relative ;
+    width:13px;
+    height:3px;
+    border:solid 2px Black;
+    border-color:transparent transparent Black transparent;
+    top:-323px;
+    left:45px;
+    transform:rotate(345deg);
+}
+
+.container{
+    width:100px;
+    height:100px;
+    margin:auto;
+    border:1px dashed #888;
+    position:relative;
+    border-radius:50%;
+    background-color:#384c50;
+    border:1px solid rgb(18,20,20);
+    box-shadow:0px 0px 32px 8px rgb(18,20,20),0px 0px 4px 2px rgb(18,20,20) inset;
+    top:-230px;
+    left:-5px;
+}
+
+.circle{
+    border-radius:50%;
+}
+
+.abs-center{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    position:absolute;
+}
+
+.core-inner{
+    width:21px;
+    height:21px;
+    border:1px solid #1b4e5f;
+    background-color:White;
+    box-shadow:0px 0px 3px 2px #52fefe,0px 0px 4px 4px #52fefe inset;
+}
+
+.core-outer{
+    width:42px;
+    height:42px;
+    border:1px solid #52fefe;
+    background-color:White;
+    box-shadow:0px 0px 1px 0px,0px 0px 4px 2px #52fefe inset;
+}
+
+.core-wrapper{
+    width:62px;
+    height:62px;
+    background-color:#073c4b;
+    box-shadow:0px 0px 2px 1px #52fefe,0px 0px 3px 2px #52fefe inset;
+}
+
+.whitelayer{
+    width:86px;
+    height:86px;
+    background-color:White;
+    box-shadow:0px 0px 4px 1px #52fefe,0px 0px 2px 1px #52fefe inset;
+}
+
+.rotator{
+    position:relative;
+    width:100%;
+    height:100%;
+    animation:3s infinite linear animcont;
+}
+
+
+
+.rect{
+    position:absolute;
+    width:14px;
+    height:10px;
+    top:8%;
+    left:44%;
+    transform-origin:6px 42px;
+
+    background-color:#073c4b;
+    box-shadow:0px 0px 5px #52fefe inset;
+    
+}
+
+
+.r1{
+    transform:rotate(0deg);
+}
+.r2{
+    transform:rotate(45deg);
+}
+.r3{
+    transform:rotate(90deg);
+}
+.r4{
+    transform:rotate(135deg);
+}
+.r5{
+    transform:rotate(180deg);
+}
+.r6{
+    transform:rotate(225deg);
+}
+.r7{
+    transform:rotate(270deg);
+}
+.r8{
+    transform:rotate(315deg);
+}
+
+@keyframes animcont{
+    from{
+      transform:rotate(0deg);
+      }
+    to{
+      transform:rotate(360deg);
+      }
+}
+
+.neck{
+    position:relative;
+    width:250px;
+    height:300px;
+    top:-250px;
+    left:-125px;
+    border-radius:10% 10% 20% 20%;
+    border-right:25px solid transparent;
+    border-left:30px solid transparent;
+    border-top:300px solid #ae1927;
+}
+
+h1{
+   color:#ae1927;
+   font-size:100px;
+   font-family:monaco;
+   text-shadow:8px 8px 16px Gold;
+   position:relative;
+   left:-110px;
+}
+
+    </style>
+    <body>
+        <div class="circle center">
+        <div class="rectangle center">
+            
+        <div class="sideleft center"></div>
+            
+        <div class="sideright center"></div>
+        <div class="strik center"></div>
+        <div class="strug center"></div>
+       <div class="eyes center" ></div>
+       <div class="eyesright center"></div>
+        </div>   
+        </div>
+       
+        <div class="jaw center"><div class="jawbottom"></div>
+        <div class="jawtop"></div>
+        <div class="jawrect center"></div>
+        
+        <div class="strdown center"></div>
+        <div class="strright center"></div>
+        <div class="mouth center" ></div>
+        <div class="lineleft center"></div>
+        <div class="lineright center"></div>
+        <div class="eyeline center"></div>
+        <div class="topleft center"></div>
+        <div class="lefttop center"></div>
+        <div class="righttop center"></div>
+        <div class="headrect center"></div>
+        <div class="jawlineleft center"></div>
+        <div class="jawlineright center"></div>
+        
+        <div class="neck center">
+        <div class="back ">
+        
+        <div class="container">
+        
+        <div class="whitelayer circle abs-center"></div>
+        <div class="core-wrapper circle abs-center"></div>
+        
+        <div class="core-outer circle abs-center"></div>
+        <div class="core-inner circle abs-center"></div>
+        <div class="rotator">
+            <div class="rect r1"></div>
+                
+            <div class="rect r2"></div>
+            <div class="rect r3"></div>
+            <div class="rect r4"></div>
+            <div class="rect r5"></div>
+            <div class="rect r6"></div>
+            <div class="rect r7"></div>
+            <div class="rect r8"></div>
+        </div>
+        
+        </div>
+        </div>
+        
+    <h2><center><font color="Gold" size="40">AND I AM</font></center></h2>
+    <h1><center><font >IRONMAN</font></center></h1>
+    </body>
+</html>
