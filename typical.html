@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+    Username<input type="text" name="username"><br>
+    Password<input type="password" name="pass"><br>
+    <a href="#Mike">Login</a><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+        <center><h1 id="Mike">GK QUIZ</h1></center>
+<hr>
+<p>
+
+<form name="quiz">
+
+<p>
+
+<b>Question 1.
+
+<br>Who is famously known as"Black Gandhi"?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q1" value="Mohandas Karamchand Gandhi">Mohandas Karamchand Gandhi<br>
+
+<input type="radio" name="q1" value="Martin Luther King">Martin Luther King<br>
+
+<input type="radio" name="q1" value="Nelson Mandela">Nelson Mandela<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 2.
+
+<br>Which country is known as "Land of cakes"?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q2" value="England">England<br>
+
+<input type="radio" name="q2" value="Scotland">Scotland<br>
+
+<input type="radio" name="q2" value="Switzerland">Switzerland<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 3.
+
+<br>Who is the Nobel prize winner in the below options?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q3" value="Amartya Sen">Amartya Sen<br>
+
+<input type="radio" name="q3" value="G.D.Naidu">G.D.Naidu<br>
+
+<input type="radio" name="q3" value="C.
+V.Raman">C.V.Raman<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 4.
+
+<br>Which digit was found by Indians?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q4" value="0">0<br>
+
+<input type="radio" name="q4" value="1">1<br>
+
+<input type="radio" name="q4" value="9">9<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 5.
+
+<br>Which one converts a source code into an object code?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q5" value="Interpreter">Interpreter<br>
+
+<input type="radio" name="q5" value="Execution tool">Execution tool<br>
+
+<input type="radio" name="q5" value="Compiler">Compiler<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+
+<input type="button"value="View score"onClick="getScore(this.form);">
+
+<input type="reset" value="Clear"><p>
+
+Score = <input type= text size=15 name= "mark"><br>
+
+Score in percentage = <input type=text size=15 name="percentage"><br>
+
+</form>
+
+<p>
+
+<form method="post" name="Form" onsubmit="" action="">
+
+</form>
+
+</body>
+
+<script>
+
+var num = 5;
+
+var choice= 3;
+
+var ans = new Array(15);
+
+ans[0] = "Martin Luther King";
+
+ans[1] = "Scotland";
+
+ans[2] = "C.V.Raman";
+
+ans[3] = "0";
+
+ans[4] = "Compiler";
+
+
+function getScore(form) {
+
+var score = 0;
+
+var x;
+
+var currentSelection;
+
+for (i=0; i<num; i++) {
+
+x = i*choice;
+
+answered=false;
+
+for (j=0; j<choice; j++) {
+
+currentSelection = form.elements[x + j];
+
+if (currentSelection.checked) {
+
+answered=true;
+
+if (currentSelection.value == ans[i]) {
+
+score++;
+
+break;
+
+}
+
+}
+
+}
+
+if (answered ===false){alert("Please attend all questions") ;return false;}
+
+}
+
+var sc= Math.round(score/num*100);
+
+form.percentage.value = sc + "%";
+
+form.mark.value=score;
+
+}
+
+</script>
+
+
+</html>
